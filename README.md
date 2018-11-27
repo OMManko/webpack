@@ -1,5 +1,7 @@
 # Webpack 
 
+Application showing the news loaded from News API. Uses webpack as a module bundler. 
+
 Client side of project
 
 ## Installing
