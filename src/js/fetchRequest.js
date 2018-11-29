@@ -1,4 +1,4 @@
-import News from "./News";
+import News from "./NewsItemClass";
 
 export default (req) => {
     const getData = async (req) => {
@@ -11,7 +11,3 @@ export default (req) => {
         .then(data => data.articles.map(news => new News(news).createNewsArticle()))
         .catch(error => console.log(error))
 };
-
-
-
-

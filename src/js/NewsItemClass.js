@@ -1,6 +1,4 @@
-import {PLACEHOLDER_IMAGE} from "./variables";
-
-export const ul = document.querySelector(".news-wrapper");
+import {PLACEHOLDER_IMAGE} from "./constants";
 
 export default class News {
     constructor({title, description, author, url, urlToImage,}) {
@@ -38,10 +36,6 @@ export default class News {
         article.appendChild(div2);
         div2.appendChild(a);
         div2.appendChild(span);
-        ul.appendChild(li);
+        document.querySelector(".news-wrapper").appendChild(li);
     }
 }
-
-
-
-

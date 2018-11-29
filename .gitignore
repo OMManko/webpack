@@ -3,3 +3,4 @@
 *.xml
 .idea/omanko-es6.github.io.iml
 node_modules
+dist
