@@ -1,4 +1,4 @@
-import {PLACEHOLDER_IMAGE} from "./constants";
+import {PLACEHOLDER_IMAGE} from "../constants";
 
 export default class News {
     constructor({title, description, author, url, urlToImage,}) {

@@ -4,19 +4,17 @@ import fetchRequest from "./fetchRequest";
 export function init() {
     const radios = document.querySelectorAll(".news-radio");
     const url = `https://newsapi.org/v2/top-headlines?category=general&country=us&sortBy=publishedAt&apiKey=0672e1602aad4dc9aa61e122190937d7`;
-    const req = new Request(url);
 
-    fetchRequest(req);
+    fetchRequest(url);
 
     [...radios].forEach(radio => {
         radio.addEventListener("click", () => {
             let searchCategory = radio.nextElementSibling.innerHTML;
             const url = `https://newsapi.org/v2/top-headlines?category=${searchCategory}&country=us&sortBy=publishedAt&apiKey=0672e1602aad4dc9aa61e122190937d7`;
-            const req = new Request(url);
 
             document.querySelector(".news-wrapper").innerHTML = "";
 
-            fetchRequest(req);
+            fetchRequest(url);
         });
     });
 }
